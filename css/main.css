@@ -1,0 +1,57 @@
+html {
+  margin: 0;
+}
+
+:root {
+--font-size-sm: clamp(0.83rem, 0.01vw + 0.83rem, 0.84rem);
+--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+--font-size-md: clamp(1.2rem, 0.87vw + 0.98rem, 1.68rem);
+--font-size-lg: clamp(1.44rem, 1.7vw + 1.02rem, 2.37rem);
+--font-size-xl: clamp(1.73rem, 2.96vw + 0.99rem, 3.36rem);
+--font-size-xxl: clamp(2.07rem, 4.86vw + 0.86rem, 4.75rem);
+--font-size-xxxl: clamp(2.49rem, 7.68vw + 0.57rem, 6.71rem);
+
+--light: #ffffff;
+--dark: #282828;
+--accent-1: #3500d3;
+--accent-2: #190061;
+--accent-3: #0c0032;
+--link: #240090;
+}
+
+body {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+p,a {
+  font-size: var(--font-size-base);
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+}
+
+h3 {
+  font-size: var(--font-size-md);
+  text-transform: uppercase;
+}
+
+h4 {
+    color: var(--accent-1);
+    text-transform: lowercase;
+    font-weight: 400;
+}
+
+a {
+  color: var(--accent-1);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-2);
+  transition: 500ms;
+}
